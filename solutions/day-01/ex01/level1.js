@@ -104,3 +104,21 @@ const first3Companies = itCompanies.slice(0, 3);
 
 // 18. Slice out the last 3 companies from the array
 const last3Companies = itCompanies.slice(0, -3);
+
+// 19. Slice out the middle IT companies from the array
+const middlePoint = Math.floor(companyLength / 2)
+const middleCompany = itCompanies.slice(middlePoint, middlePoint + 1);
+
+// 20. Remove the first IT company from the array
+const withoutFirstCompany = itCompanies.slice(1)
+
+// 21. Remove the middle IT company or companies from the array
+const withoutMIddle = []
+  .concat(itCompanies.slice(0, middlePoint))
+  .concat(itCompanies.slice(middlePoint + 2))
+
+// 22. Remove the last IT company from the array
+const withoutLastCompany = itCompanies.slice(0, -1)
+
+// 23. Remove all IT companies
+const emptyArray = []
